@@ -7,10 +7,17 @@
 
 
 {% block body %}
+  <style>
+   textarea {
+    width: 90%; /* Ширина поля в процентах */
+    height: 200px; /* Высота поля в пикселах */
+    resize: none; /* Запрещаем изменять размер */
+   }
+  </style>
 <div class="container mt-5">
     <h1>Добавление статьи</h1>
     <form method="post">
-        <input type="text" name="title" id="title" class="from-control" placeholder="Введите название"><br>
+        <input  name="title" id="title" class="from-control" placeholder="Введите название"><br>
         <textarea name="intro" id="intro" class="from-control" placeholder="Введите анонс"></textarea><br>
         <textarea name="text" id="text" class="from-control" placeholder="Введите основной текст"></textarea><br>
         <input type="submit" class="btn btn-success" value="Отправить"><br>

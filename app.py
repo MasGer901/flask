@@ -26,7 +26,7 @@ def index():
 
 
 @app.route('/create-article', methods=['POST', 'GET'])
-def about():
+def create_article():
     if request.method == "POST":
         title = request.form['title']
         intro = request.form['intro']
@@ -37,13 +37,56 @@ def about():
         try:
             db.session.add(article)
             db.session.commit()
-            return redirect('/')
+            return redirect('/posts')
         except:
             return "При добавлении статьи возникли ошибки"
     else:
         return render_template("create-article.html")
 
 
+@app.route('/about')
+def about():
+    return render_template("about.html")
+
+
+@app.route('/posts')
+def posts():
+    articles = Article.query.order_by(Article.date.desc()).all()
+    return render_template("posts.html", articles=articles)
+
+
+@app.route('/posts/<int:id>')
+def post_detail(id):
+    article = Article.query.get(id)
+    return render_template("post_detail.html", article=article)
+
+
+@app.route('/posts/<int:id>/delete')
+def post_delete(id):
+    article = Article.query.get_or_404(id)
+    try:
+        db.session.delete(article)
+        db.session.commit()
+        return redirect('/posts')
+    except:
+        return "При удалении статьи возникли ошибки"
+
+
+@app.route('/posts/<int:id>/update', methods=['POST', 'GET'])
+def post_update(id):
+    article = Article.query.get(id)
+    if request.method == "POST":
+        article.title = request.form['title']
+        article.intro = request.form['intro']
+        article.text = request.form['text']
+
+        try:
+            db.session.commit()
+            return redirect('/posts')
+        except:
+            return "При редактировании статьи возникли ошибки"
+    else:
+        return render_template("post_update.html", article=article)
 
 
 if __name__ == "__main__":
