@@ -1,0 +1,350 @@
+03:38:25 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 03:38:25] "GET /create-article HTTP/1.1" 200 -
+03:38:26 - connectionpool - DEBUG - _new_conn: 1001 - Starting new HTTPS connection (1): geocode-maps.yandex.ru:443
+03:38:26 - connectionpool - DEBUG - _make_request: 456 - https://geocode-maps.yandex.ru:443 "GET /1.x/?format=json&apikey=424bb4e1-2fcf-45ff-b772-acad140cd7cc&geocode=%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9+%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%90%D1%80%D1%81%D0%B5%D0%BD%D1%8C%D0%B5%D0%B2%D0%B05 HTTP/1.1" 200 None
+03:38:26 - app - INFO - create_article: 57 - ['43.979288', '56.271161']
+03:38:26 - app - INFO - create_article: 65 - 396
+03:38:26 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 03:38:26] "[32mPOST /create-article HTTP/1.1[0m" 302 -
+03:38:26 - app - INFO - post_detail: 89 - (29, 'Нижний Новгород', 'Арсеньева', 5, 43.979288, 56.271161, 396)
+03:38:26 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 03:38:26] "[35m[1mGET /calculated_distance/29 HTTP/1.1[0m" 500 -
+03:38:27 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 03:38:27] "GET /calculated_distance/29?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+03:38:27 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 03:38:27] "GET /calculated_distance/29?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+03:38:27 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 03:38:27] "GET /calculated_distance/29?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+03:38:27 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 03:38:27] "[36mGET /calculated_distance/29?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+03:43:25 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 03:43:25] "GET /create-article HTTP/1.1" 200 -
+03:43:26 - connectionpool - DEBUG - _new_conn: 1001 - Starting new HTTPS connection (1): geocode-maps.yandex.ru:443
+03:43:26 - connectionpool - DEBUG - _make_request: 456 - https://geocode-maps.yandex.ru:443 "GET /1.x/?format=json&apikey=424bb4e1-2fcf-45ff-b772-acad140cd7cc&geocode=%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9+%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%90%D1%80%D1%81%D0%B5%D0%BD%D1%8C%D0%B5%D0%B2%D0%B05 HTTP/1.1" 200 None
+03:43:26 - app - INFO - create_article: 57 - ['43.979288', '56.271161']
+03:43:26 - app - INFO - create_article: 65 - 396
+03:43:26 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 03:43:26] "[32mPOST /create-article HTTP/1.1[0m" 302 -
+03:43:26 - app - INFO - post_detail: 89 - (30, 'Нижний Новгород', 'Арсеньева', 5, 43.979288, 56.271161, 396)
+03:43:26 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 03:43:26] "[35m[1mGET /calculated_distance/30 HTTP/1.1[0m" 500 -
+03:43:26 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 03:43:26] "GET /calculated_distance/30?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+03:43:26 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 03:43:26] "GET /calculated_distance/30?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+03:43:26 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 03:43:26] "GET /calculated_distance/30?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+03:43:26 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 03:43:26] "[36mGET /calculated_distance/30?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+15:53:53 - _internal - INFO - _log: 224 -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+15:53:53 - _internal - INFO - _log: 224 -  * Restarting with stat
+15:53:53 - _internal - WARNING - _log: 224 -  * Debugger is active!
+15:53:53 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+15:54:01 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:54:01] "GET / HTTP/1.1" 200 -
+15:54:02 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:54:02] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+15:54:02 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:54:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+15:54:04 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:54:04] "GET /posts HTTP/1.1" 200 -
+15:54:04 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:54:04] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+15:54:32 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:54:32] "GET /posts HTTP/1.1" 200 -
+15:54:32 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:54:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+15:54:34 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:54:34] "[33mGET /calculated_distance/ HTTP/1.1[0m" 404 -
+15:54:41 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:54:41] "GET /posts HTTP/1.1" 200 -
+15:54:41 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:54:41] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+15:54:43 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:54:43] "[33mGET /calculated_distance/ HTTP/1.1[0m" 404 -
+15:55:43 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:55:43] "GET /posts HTTP/1.1" 200 -
+15:55:43 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:55:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+15:56:07 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:56:07] "GET /posts HTTP/1.1" 200 -
+15:56:07 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:56:07] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+15:56:42 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:56:42] "GET /posts HTTP/1.1" 200 -
+15:56:42 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:56:42] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+15:57:08 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:57:08] "GET /posts HTTP/1.1" 200 -
+15:57:08 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:57:08] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+15:57:47 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:57:47] "GET /posts HTTP/1.1" 200 -
+15:57:47 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:57:47] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+15:58:25 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:58:25] "GET /posts HTTP/1.1" 200 -
+15:58:25 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:58:25] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+15:58:54 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:58:54] "GET /posts HTTP/1.1" 200 -
+15:58:54 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:58:54] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+15:58:56 - app - INFO - post_detail: 89 - (3, 'Нижний Новгород', 'Арсеньева', 5, 43.979288, 56.271161, 396)
+15:58:56 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:58:56] "[35m[1mGET /calculated_distance/3 HTTP/1.1[0m" 500 -
+15:58:56 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:58:56] "GET /calculated_distance/3?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+15:58:56 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:58:56] "GET /calculated_distance/3?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+15:58:56 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:58:56] "GET /calculated_distance/3?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+15:58:56 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:58:56] "[36mGET /calculated_distance/3?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+15:59:48 - app - INFO - post_detail: 89 - (3, 'Нижний Новгород', 'Арсеньева', 5, 43.979288, 56.271161, 396)
+15:59:48 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:59:48] "[35m[1mGET /calculated_distance/3 HTTP/1.1[0m" 500 -
+15:59:48 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:59:48] "[36mGET /calculated_distance/3?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+15:59:48 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:59:48] "[36mGET /calculated_distance/3?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+15:59:48 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 15:59:48] "[36mGET /calculated_distance/3?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+16:00:27 - app - INFO - post_detail: 89 - (3, 'Нижний Новгород', 'Арсеньева', 5, 43.979288, 56.271161, 396)
+16:00:27 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:00:27] "[35m[1mGET /calculated_distance/3 HTTP/1.1[0m" 500 -
+16:00:27 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:00:27] "[36mGET /calculated_distance/3?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+16:00:27 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:00:27] "[36mGET /calculated_distance/3?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+16:00:27 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:00:27] "[36mGET /calculated_distance/3?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+16:02:13 - _internal - INFO - _log: 224 -  * Detected change in 'C:\\Users\\dima2\\flask\\for_test.py', reloading
+16:02:13 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:02:13 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:02:13 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:02:58 - _internal - INFO - _log: 224 -  * Detected change in 'C:\\Users\\dima2\\flask\\for_test.py', reloading
+16:02:58 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:02:58 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:02:58 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:03:24 - _internal - INFO - _log: 224 -  * Detected change in 'C:\\Users\\dima2\\flask\\for_test.py', reloading
+16:03:24 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:03:25 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:03:25 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:05:37 - _internal - INFO - _log: 224 -  * Detected change in 'C:\\Users\\dima2\\flask\\for_test.py', reloading
+16:05:37 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:05:38 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:05:38 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:05:51 - _internal - INFO - _log: 224 -  * Detected change in 'C:\\Users\\dima2\\flask\\for_test.py', reloading
+16:05:52 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:05:52 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:05:52 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:07:50 - _internal - INFO - _log: 224 -  * Detected change in 'C:\\Users\\dima2\\flask\\for_test.py', reloading
+16:07:50 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:07:51 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:07:51 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:08:01 - _internal - INFO - _log: 224 -  * Detected change in 'C:\\Users\\dima2\\flask\\for_test.py', reloading
+16:08:01 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:08:02 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:08:02 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:08:22 - _internal - INFO - _log: 224 -  * Detected change in 'C:\\Users\\dima2\\flask\\for_test.py', reloading
+16:08:22 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:08:22 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:08:22 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:09:19 - _internal - INFO - _log: 224 -  * Detected change in 'C:\\Users\\dima2\\flask\\for_test.py', reloading
+16:09:19 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:09:20 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:09:20 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:09:53 - _internal - INFO - _log: 224 -  * Detected change in 'C:\\Users\\dima2\\flask\\for_test.py', reloading
+16:09:53 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:09:54 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:09:54 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:10:00 - _internal - INFO - _log: 224 -  * Detected change in 'C:\\Users\\dima2\\flask\\for_test.py', reloading
+16:10:00 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:10:01 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:10:01 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:12:38 - _internal - INFO - _log: 224 -  * Detected change in 'C:\\Users\\dima2\\flask\\for_test.py', reloading
+16:12:38 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:12:39 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:12:39 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:14:44 - _internal - INFO - _log: 224 -  * Detected change in 'C:\\Users\\dima2\\flask\\for_test.py', reloading
+16:14:44 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:14:45 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:14:45 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:15:04 - _internal - INFO - _log: 224 -  * Detected change in 'C:\\Users\\dima2\\flask\\for_test.py', reloading
+16:15:04 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:15:05 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:15:05 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:16:28 - _internal - INFO - _log: 224 -  * Detected change in 'C:\\Users\\dima2\\flask\\database.py', reloading
+16:16:28 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:17:10 - _internal - INFO - _log: 224 -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+16:17:10 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:17:11 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:17:11 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:17:12 - app - INFO - post_detail: 89 - list[<sqlite3.Cursor object at 0x00000294E64FE260>]
+16:17:12 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:17:12] "[35m[1mGET /calculated_distance/3 HTTP/1.1[0m" 500 -
+16:17:12 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:17:12] "[36mGET /calculated_distance/3?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+16:17:12 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:17:12] "[36mGET /calculated_distance/3?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+16:17:12 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:17:12] "[36mGET /calculated_distance/3?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+16:17:12 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:17:12] "[36mGET /calculated_distance/3?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+16:18:47 - _internal - INFO - _log: 224 -  * Detected change in 'C:\\Users\\dima2\\flask\\database.py', reloading
+16:18:47 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:18:48 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:18:48 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:18:48 - app - INFO - post_detail: 89 - [(3, 'Нижний Новгород', 'Арсеньева', 5, 43.979288, 56.271161, 396)]
+16:18:48 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:18:48] "[35m[1mGET /calculated_distance/3 HTTP/1.1[0m" 500 -
+16:18:48 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:18:48] "[36mGET /calculated_distance/3?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+16:18:48 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:18:48] "[36mGET /calculated_distance/3?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+16:18:48 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:18:48] "[36mGET /calculated_distance/3?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+16:19:28 - _internal - INFO - _log: 224 -  * Detected change in 'C:\\Users\\dima2\\flask\\app.py', reloading
+16:19:28 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:19:29 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:19:29 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:19:34 - app - INFO - post_detail: 89 - [(3, 'Нижний Новгород', 'Арсеньева', 5, 43.979288, 56.271161, 396)]
+16:19:34 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:19:34] "GET /calculated_distance/3 HTTP/1.1" 200 -
+16:19:34 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:19:34] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:21:40 - app - INFO - post_detail: 89 - [(3, 'Нижний Новгород', 'Арсеньева', 5, 43.979288, 56.271161, 396)]
+16:21:40 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:21:40] "GET /calculated_distance/3 HTTP/1.1" 200 -
+16:21:40 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:21:40] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:23:23 - app - INFO - post_detail: 89 - [(3, 'Нижний Новгород', 'Арсеньева', 5, 43.979288, 56.271161, 396)]
+16:23:23 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:23:23] "GET /calculated_distance/3 HTTP/1.1" 200 -
+16:23:23 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:23:23] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:23:26 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:23:26] "GET /posts HTTP/1.1" 200 -
+16:23:26 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:23:26] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:23:28 - app - INFO - post_detail: 89 - [(3, 'Нижний Новгород', 'Арсеньева', 5, 43.979288, 56.271161, 396)]
+16:23:28 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:23:28] "GET /calculated_distance/3 HTTP/1.1" 200 -
+16:23:28 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:23:28] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:23:34 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:23:34] "GET /posts HTTP/1.1" 200 -
+16:23:34 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:23:34] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:23:36 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:23:36] "GET /posts HTTP/1.1" 200 -
+16:23:36 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:23:36] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:23:40 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:23:40] "GET /about HTTP/1.1" 200 -
+16:23:40 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:23:40] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:25:37 - _internal - INFO - _log: 224 -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+16:25:37 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:25:37 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:25:37 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:25:40 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:25:40] "GET / HTTP/1.1" 200 -
+16:25:40 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:25:40] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:25:42 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:25:42] "GET /create-article HTTP/1.1" 200 -
+16:25:42 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:25:42] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:25:44 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:25:44] "GET /posts HTTP/1.1" 200 -
+16:25:44 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:25:44] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:25:45 - app - INFO - post_detail: 89 - [(1, 'Нижний Новгород', 'Арсеньева', 5, 43.979288, 56.271161, 396)]
+16:25:45 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:25:45] "GET /calculated_distance/1 HTTP/1.1" 200 -
+16:25:45 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:25:45] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:25:47 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:25:47] "GET /posts HTTP/1.1" 200 -
+16:25:47 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:25:47] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:25:54 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:25:54] "GET / HTTP/1.1" 200 -
+16:25:54 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:25:54] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:28:19 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:28:19] "GET / HTTP/1.1" 200 -
+16:28:19 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:28:19] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:29:20 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:29:20] "GET / HTTP/1.1" 200 -
+16:29:20 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:29:20] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:33:03 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:33:03] "GET /posts HTTP/1.1" 200 -
+16:33:03 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:33:03] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:33:06 - app - INFO - post_detail: 89 - [(1, 'Нижний Новгород', 'Арсеньева', 5, 43.979288, 56.271161, 396)]
+16:33:06 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:33:06] "GET /calculated_distance/1 HTTP/1.1" 200 -
+16:33:06 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:33:06] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:33:34 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:33:34] "GET / HTTP/1.1" 200 -
+16:33:34 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:33:34] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:34:04 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:34:04] "GET / HTTP/1.1" 200 -
+16:34:04 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:34:04] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:37:24 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:37:24] "GET / HTTP/1.1" 200 -
+16:37:24 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:37:24] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:37:39 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:37:39] "GET /about HTTP/1.1" 200 -
+16:37:39 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:37:39] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:40:32 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:40:32] "GET /about HTTP/1.1" 200 -
+16:40:32 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:40:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:43:18 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:43:18] "GET /about HTTP/1.1" 200 -
+16:43:18 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:43:18] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:52:23 - _internal - INFO - _log: 224 -  * Detected change in 'C:\\Users\\dima2\\flask\\database.py', reloading
+16:52:23 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:52:23 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:52:23 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:52:27 - _internal - INFO - _log: 224 -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+16:52:27 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:52:28 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:52:28 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:52:36 - _internal - INFO - _log: 224 -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+16:52:36 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:52:37 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:52:37 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:52:37 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:52:37] "GET / HTTP/1.1" 200 -
+16:52:38 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:52:38] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:52:41 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:52:41] "GET /create-article HTTP/1.1" 200 -
+16:52:41 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:52:41] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:53:04 - connectionpool - DEBUG - _new_conn: 1001 - Starting new HTTPS connection (1): geocode-maps.yandex.ru:443
+16:53:04 - connectionpool - DEBUG - _make_request: 456 - https://geocode-maps.yandex.ru:443 "GET /1.x/?format=json&apikey=424bb4e1-2fcf-45ff-b772-acad140cd7cc&geocode=%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9+%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%A2%D0%B8%D1%80%D0%B0%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F11 HTTP/1.1" 200 None
+16:53:04 - app - INFO - create_article: 57 - ['43.935954', '56.301179']
+16:53:04 - app - INFO - create_article: 65 - 393
+16:53:04 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:53:04] "[32mPOST /create-article HTTP/1.1[0m" 302 -
+16:53:04 - app - INFO - post_detail: 89 - [(31, 'Нижний Новгород', 'Тираспольская', 11, 43.935954, 56.301179, 393)]
+16:53:04 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:53:04] "GET /calculated_distance/31 HTTP/1.1" 200 -
+16:53:05 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:53:05] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:53:12 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:53:12] "GET /posts HTTP/1.1" 200 -
+16:53:12 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:53:12] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:53:17 - app - INFO - post_detail: 89 - [(31, 'Нижний Новгород', 'Тираспольская', 11, 43.935954, 56.301179, 393)]
+16:53:17 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:53:17] "GET /calculated_distance/31 HTTP/1.1" 200 -
+16:53:17 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:53:17] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:53:18 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:53:18] "[32mGET /posts/31/delete HTTP/1.1[0m" 302 -
+16:53:18 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:53:18] "GET /posts HTTP/1.1" 200 -
+16:53:18 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:53:18] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:53:24 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:53:24] "GET / HTTP/1.1" 200 -
+16:53:24 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:53:24] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:59:16 - _internal - INFO - _log: 224 -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+16:59:16 - _internal - INFO - _log: 224 -  * Restarting with stat
+16:59:17 - _internal - WARNING - _log: 224 -  * Debugger is active!
+16:59:17 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+16:59:17 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:59:17] "GET /posts HTTP/1.1" 200 -
+16:59:17 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:59:17] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+16:59:32 - app - INFO - post_detail: 88 - [(1, 'Нижний Новгород', 'Арсеньева', 5, 43.979288, 56.271161, 396)]
+16:59:32 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:59:32] "GET /calculated_distance/1 HTTP/1.1" 200 -
+16:59:32 - _internal - INFO - _log: 224 - 127.0.0.1 - - [11/May/2022 16:59:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+01:54:13 - _internal - INFO - _log: 224 -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+01:54:13 - _internal - INFO - _log: 224 -  * Restarting with stat
+01:54:14 - _internal - WARNING - _log: 224 -  * Debugger is active!
+01:54:14 - _internal - INFO - _log: 224 -  * Debugger PIN: 393-124-589
+01:54:19 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:19] "GET / HTTP/1.1" 200 -
+01:54:19 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:19] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+01:54:19 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+01:54:22 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:22] "GET /posts HTTP/1.1" 200 -
+01:54:22 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:22] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+01:54:23 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:23] "GET /about HTTP/1.1" 200 -
+01:54:23 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:23] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+01:54:24 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:24] "GET / HTTP/1.1" 200 -
+01:54:24 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:24] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+01:54:26 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:26] "GET /about HTTP/1.1" 200 -
+01:54:26 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:26] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+01:54:27 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:27] "GET /posts HTTP/1.1" 200 -
+01:54:27 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:27] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+01:54:29 - app - INFO - post_detail: 88 - [(1, 'Нижний Новгород', 'Арсеньева', 5, 43.979288, 56.271161, 396)]
+01:54:29 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:29] "GET /calculated_distance/1 HTTP/1.1" 200 -
+01:54:29 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:29] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+01:54:31 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:31] "GET /posts HTTP/1.1" 200 -
+01:54:31 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:31] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+01:54:32 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:32] "GET /create-article HTTP/1.1" 200 -
+01:54:32 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:54:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+01:55:26 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:55:26] "GET / HTTP/1.1" 200 -
+01:55:26 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:55:26] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+01:55:51 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:55:51] "GET /create-article HTTP/1.1" 200 -
+01:55:51 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:55:51] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+01:56:40 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:56:40] "GET /create-article HTTP/1.1" 200 -
+01:56:40 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:56:40] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+01:56:57 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:56:57] "GET /create-article HTTP/1.1" 200 -
+01:56:57 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:56:57] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+01:57:15 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:57:15] "GET /posts HTTP/1.1" 200 -
+01:57:15 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:57:15] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+01:57:17 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:57:17] "GET /about HTTP/1.1" 200 -
+01:57:17 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:57:17] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+01:57:24 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:57:24] "GET / HTTP/1.1" 200 -
+01:57:24 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 01:57:24] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:00:04 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:00:04] "GET /create-article HTTP/1.1" 200 -
+02:00:04 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:00:04] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:00:05 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:00:05] "GET / HTTP/1.1" 200 -
+02:00:05 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:00:05] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:00:41 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:00:41] "GET /create-article HTTP/1.1" 200 -
+02:00:41 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:00:41] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:00:43 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:00:43] "GET /posts HTTP/1.1" 200 -
+02:00:43 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:00:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:00:44 - app - INFO - post_detail: 88 - [(1, 'Нижний Новгород', 'Арсеньева', 5, 43.979288, 56.271161, 396)]
+02:00:44 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:00:44] "GET /calculated_distance/1 HTTP/1.1" 200 -
+02:00:44 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:00:44] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:00:53 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:00:53] "GET /posts HTTP/1.1" 200 -
+02:00:53 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:00:53] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:01:01 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:01:01] "GET /create-article HTTP/1.1" 200 -
+02:01:01 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:01:01] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:01:35 - connectionpool - DEBUG - _new_conn: 1001 - Starting new HTTPS connection (1): geocode-maps.yandex.ru:443
+02:01:36 - connectionpool - DEBUG - _make_request: 456 - https://geocode-maps.yandex.ru:443 "GET /1.x/?format=json&apikey=424bb4e1-2fcf-45ff-b772-acad140cd7cc&geocode=%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9+%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%9B%D0%B5%D1%81%D0%BA%D0%BE%D0%B2%D0%B050 HTTP/1.1" 200 None
+02:01:36 - app - INFO - create_article: 56 - ['43.854063', '56.232594']
+02:01:36 - app - INFO - create_article: 64 - 388
+02:01:36 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:01:36] "[32mPOST /create-article HTTP/1.1[0m" 302 -
+02:01:36 - app - INFO - post_detail: 88 - [(32, 'Нижний Новгород', 'Лескова', 50, 43.854063, 56.232594, 388)]
+02:01:36 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:01:36] "GET /calculated_distance/32 HTTP/1.1" 200 -
+02:01:36 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:01:36] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:01:44 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:01:44] "GET /posts HTTP/1.1" 200 -
+02:01:44 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:01:44] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:01:46 - app - INFO - post_detail: 88 - [(32, 'Нижний Новгород', 'Лескова', 50, 43.854063, 56.232594, 388)]
+02:01:46 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:01:46] "GET /calculated_distance/32 HTTP/1.1" 200 -
+02:01:46 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:01:46] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:01:48 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:01:48] "[32mGET /posts/32/delete HTTP/1.1[0m" 302 -
+02:01:48 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:01:48] "GET /posts HTTP/1.1" 200 -
+02:01:48 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:01:48] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:01:53 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:01:53] "GET /create-article HTTP/1.1" 200 -
+02:01:53 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:01:53] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:02:20 - connectionpool - DEBUG - _new_conn: 1001 - Starting new HTTPS connection (1): geocode-maps.yandex.ru:443
+02:02:20 - connectionpool - DEBUG - _make_request: 456 - https://geocode-maps.yandex.ru:443 "GET /1.x/?format=json&apikey=424bb4e1-2fcf-45ff-b772-acad140cd7cc&geocode=%D0%93%D1%83%D1%81%D1%8C-%D0%A5%D1%80%D1%83%D1%81%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%D0%9A%D0%B0%D1%85%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE12 HTTP/1.1" 200 None
+02:02:20 - app - INFO - create_article: 56 - ['40.68955', '55.62331']
+02:02:20 - app - INFO - create_article: 64 - 194
+02:02:20 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:02:20] "[32mPOST /create-article HTTP/1.1[0m" 302 -
+02:02:20 - app - INFO - post_detail: 88 - [(33, 'Гусь-Хрустальный', 'Каховского', 12, 40.68955, 55.62331, 194)]
+02:02:20 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:02:20] "GET /calculated_distance/33 HTTP/1.1" 200 -
+02:02:20 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:02:20] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:02:24 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:02:24] "GET /posts HTTP/1.1" 200 -
+02:02:24 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:02:24] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:02:29 - app - INFO - post_detail: 88 - [(33, 'Гусь-Хрустальный', 'Каховского', 12, 40.68955, 55.62331, 194)]
+02:02:29 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:02:29] "GET /calculated_distance/33 HTTP/1.1" 200 -
+02:02:29 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:02:29] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:02:30 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:02:30] "[32mGET /posts/33/delete HTTP/1.1[0m" 302 -
+02:02:30 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:02:30] "GET /posts HTTP/1.1" 200 -
+02:02:30 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:02:30] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:02:50 - app - INFO - post_detail: 88 - [(1, 'Нижний Новгород', 'Арсеньева', 5, 43.979288, 56.271161, 396)]
+02:02:50 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:02:50] "GET /calculated_distance/1 HTTP/1.1" 200 -
+02:02:50 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:02:50] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:02:51 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:02:51] "[32mGET /posts/1/delete HTTP/1.1[0m" 302 -
+02:02:51 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:02:51] "GET /posts HTTP/1.1" 200 -
+02:02:51 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:02:51] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:03:17 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:03:17] "GET /posts HTTP/1.1" 200 -
+02:03:17 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:03:17] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:03:22 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:03:22] "GET /create-article HTTP/1.1" 200 -
+02:03:22 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:03:22] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+02:03:27 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:03:27] "GET / HTTP/1.1" 200 -
+02:03:27 - _internal - INFO - _log: 224 - 127.0.0.1 - - [12/May/2022 02:03:27] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -

@@ -1,22 +1,39 @@
-from flask import Flask, render_template, url_for, request, redirect
+from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime
+import distance
+import location
+import logging
+import database
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test_flask.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///my_service.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
-
-class Article(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    intro = db.Column(db.String(300), nullable=False)
-    title = db.Column(db.String(100), nullable=False)
-    text = db.Column(db.Text, nullable=False)
-    date = db.Column(db.DateTime, default=datetime.utcnow)
-
-    def __repr__(self):
-        return 'Article %r' % self.id
+logging.basicConfig(
+    level=logging.DEBUG,
+    filename="mylog.log",
+    format="%(asctime)s - %(module)s - %(levelname)s - %(funcName)s: %(lineno)d - %(message)s",
+    datefmt='%H:%M:%S',
+)
+logging.basicConfig(
+    level=logging.WARNING,
+    filename="mylog.log",
+    format="%(asctime)s - %(module)s - %(levelname)s - %(funcName)s: %(lineno)d - %(message)s",
+    datefmt='%H:%M:%S',
+)
+logging.basicConfig(
+    level=logging.ERROR,
+    filename="mylog.log",
+    format="%(asctime)s - %(module)s - %(levelname)s - %(funcName)s: %(lineno)d - %(message)s",
+    datefmt='%H:%M:%S',
+)
+logging.basicConfig(
+    level=logging.CRITICAL,
+    filename="mylog.log",
+    format="%(asctime)s - %(module)s - %(levelname)s - %(funcName)s: %(lineno)d - %(message)s",
+    datefmt='%H:%M:%S',
+)
 
 
 @app.route('/')
@@ -28,20 +45,48 @@ def index():
 @app.route('/create-article', methods=['POST', 'GET'])
 def create_article():
     if request.method == "POST":
-        title = request.form['title']
-        intro = request.form['intro']
-        text = request.form['text']
+        city = request.form['city']
+        street = request.form['street']
+        house = request.form['house']
 
-        article = Article(title=title, intro=intro, text=text)
-
+        local = city + street + house
         try:
-            db.session.add(article)
-            db.session.commit()
-            return redirect('/posts')
+            try:
+                coordinates = location.location(local)
+                logging.info(coordinates)
+                Lo1 = float(coordinates[0])
+                La1 = float(coordinates[1])
+            except:
+                return "При вычислении координат ошибка"
+
+            try:
+                calculated = distance.create_lo_la(coordinates)
+                logging.info(calculated)
+            except:
+                return "при вычислении расстояния ошибка"
+
+            try:
+                id = database.receiver(city, street, house, Lo1, La1, calculated)
+            except:
+                return "При записи в бд ошибка"
+            return redirect('/calculated_distance/' + f"{id}")
         except:
-            return "При добавлении статьи возникли ошибки"
+            return "При вычислении произошли ошибки"
     else:
         return render_template("create-article.html")
+
+
+@app.route('/calculated_distance')
+def calculated_distance():
+    computed = database.calculated()
+    return render_template("calculated_distance.html", computed=computed)
+
+
+@app.route('/calculated_distance/<int:id>')
+def post_detail(id):
+    post = database.calculated_id(id)
+    logging.info(post)
+    return render_template("calculated_distance.html", post=post)
 
 
 @app.route('/about')
@@ -51,42 +96,17 @@ def about():
 
 @app.route('/posts')
 def posts():
-    articles = Article.query.order_by(Article.date.desc()).all()
+    articles = database.calculated()
     return render_template("posts.html", articles=articles)
-
-
-@app.route('/posts/<int:id>')
-def post_detail(id):
-    article = Article.query.get(id)
-    return render_template("post_detail.html", article=article)
 
 
 @app.route('/posts/<int:id>/delete')
 def post_delete(id):
-    article = Article.query.get_or_404(id)
     try:
-        db.session.delete(article)
-        db.session.commit()
+        database.delete_calculated(id)
         return redirect('/posts')
     except:
         return "При удалении статьи возникли ошибки"
-
-
-@app.route('/posts/<int:id>/update', methods=['POST', 'GET'])
-def post_update(id):
-    article = Article.query.get(id)
-    if request.method == "POST":
-        article.title = request.form['title']
-        article.intro = request.form['intro']
-        article.text = request.form['text']
-
-        try:
-            db.session.commit()
-            return redirect('/posts')
-        except:
-            return "При редактировании статьи возникли ошибки"
-    else:
-        return render_template("post_update.html", article=article)
 
 
 if __name__ == "__main__":
